@@ -27,21 +27,21 @@ export default function Social() {
         plateform="LinkedIn"
         icon={LinkedIn}
         text="LinkedIn"
-        link="https://github.com/"
+        link="https://github.com/mouhamedhanne"
         background="bg-[#0e79b1]"
       />
       <SocialIcon
         plateform="Instagram"
         icon={Instagram}
         text="Instagram"
-        link="https://github.com/"
+        link="https://instagram.com/"
         background="bg-[#dc4764]"
       />
       <SocialIcon
         plateform="Twitter"
         icon={Twitter}
         text="Twitter"
-        link="https://github.com/"
+        link="https://twitter.com/mouhamedhanne13"
         background="bg-[#299fe8]"
       />
 
@@ -49,7 +49,7 @@ export default function Social() {
         plateform="Github"
         icon={Github}
         text="Github"
-        link="https://github.com/"
+        link="https://github.com/mouhamedhanne"
         background="bg-gray-400"
       />
       <SocialIcon

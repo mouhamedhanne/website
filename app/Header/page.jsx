@@ -70,6 +70,16 @@ export const generalLinks = [
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
+  //const [resolvedTheme, setTheme] = useTheme();
+  const theme = useTheme();
+  const resolvedTheme = theme[0];
+  const setTheme = theme[1];
+
+  useEffect(() => {
+    if (resolvedTheme === "light") {
+      setTheme("dark");
+    }
+  }, [resolvedTheme, setTheme]);
 
   return (
     <div>
