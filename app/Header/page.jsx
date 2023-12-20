@@ -33,7 +33,7 @@ export const generalLinks = [
     Icon: <FaUser />,
   },
   {
-    href: "/projects",
+    href: "/project",
     label: "Projets",
     target: "_blank",
     Icon: <FaCode />,
@@ -70,6 +70,18 @@ export const generalLinks = [
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
+  //const [resolvedTheme, setTheme] = useTheme();
+
+  //Theme Dark par defaut
+  const theme = useTheme();
+  const resolvedTheme = theme[0];
+  const setTheme = theme[1];
+
+  useEffect(() => {
+    if (resolvedTheme === "light") {
+      setTheme("dark");
+    }
+  }, [resolvedTheme, setTheme]);
 
   return (
     <div>
@@ -122,7 +134,7 @@ function AppIcon({ mouseX, imgs, href }) {
       <motion.div
         ref={ref}
         style={{ width }}
-        className="z-30 flex items-center  justify-center rounded-full  border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square "
+        className="z-30 flex items-center justify-center rounded-full  border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square "
       >
         <span className="text-3xl">{imgs}</span>
       </motion.div>
@@ -157,7 +169,7 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
       onClick={() => setTheme(otherTheme)}
     >
-      <WiDayCloudy className="w-6/12 transition  dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
+      <WiDayCloudy className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
       <MdNightsStay className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
     </motion.div>
   );
