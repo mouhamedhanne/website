@@ -70,18 +70,6 @@ export const generalLinks = [
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
-  //const [resolvedTheme, setTheme] = useTheme();
-
-  //Theme Dark par defaut
-  const theme = useTheme();
-  const resolvedTheme = theme[0];
-  const setTheme = theme[1];
-
-  useEffect(() => {
-    if (resolvedTheme === "light") {
-      setTheme("dark");
-    }
-  }, [resolvedTheme, setTheme]);
 
   return (
     <div>
@@ -145,7 +133,7 @@ function AppIcon({ mouseX, imgs, href }) {
 export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let { resolvedTheme, setTheme } = useTheme();
   let otherTheme = resolvedTheme === "dark" ? "light" : "dark";
-  let [mounted, setMounted] = useState(false);
+  let [mounted, setMounted] = useState(true);
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {
@@ -158,7 +146,7 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
 
   useEffect(() => {
-    setMounted(true);
+    setMounted(false);
   }, []);
 
   return (
