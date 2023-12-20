@@ -9,54 +9,64 @@ import {
 import { useRef, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import {
-  PiHouseThin,
-  PiCloudSunLight,
-  PiMoonLight,
-  PiGithubLogoThin,
-  PiTwitterLogoThin,
-} from "react-icons/pi";
-import { GoPerson } from "react-icons/go";
+import { MdNightsStay } from "react-icons/md";
+import { WiDayCloudy } from "react-icons/wi";
 
-import { HiOutlineCode } from "react-icons/hi";
-import { SiStackblitz } from "react-icons/si";
+import { FaEnvelope } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+//import { SiStackblitz } from "react-icons/si";
 import Link from "next/link";
 
 export const generalLinks = [
   {
     href: "/",
-    label: "Inicio",
-    Icon: <PiHouseThin />,
+    label: "Home",
+    Icon: <FaHome />,
   },
   {
     href: "/about",
     label: "About",
-    Icon: <GoPerson />,
+    Icon: <FaUser />,
   },
+  {
+    href: "/projects",
+    label: "Projets",
+    target: "_blank",
+    Icon: <FaCode />,
+  },
+  {
+    href: "https://github.com/mouhamedhanne",
+    label: "GitHub",
+    target: "_blank",
+    Icon: <FaGithub />,
+  },
+  {
+    href: "https://twitter.com/mouhamedhanne13",
+    label: "Twitter",
+    target: "_blank",
+    Icon: <FaXTwitter />,
+  },
+  {
+    href: "/newsletter",
+    label: "GitHub",
+    target: "_blank",
+    Icon: <FaEnvelope />,
+  },
+];
 
-  {
-    href: "/project",
-    label: "project",
-    Icon: <HiOutlineCode />,
-  },
-  {
-    href: "https://github.com/Joscriptt",
-    label: "GitHub",
-    target: "_blank",
-    Icon: <PiGithubLogoThin />,
-  },
-  {
-    href: "https://twitter.com/Joenaldo",
-    label: "GitHub",
-    target: "_blank",
-    Icon: <PiTwitterLogoThin />,
-  },
+{
+  /*
   {
     href: "/experience",
     label: "experience",
     Icon: <SiStackblitz />,
   },
-];
+ */
+}
 
 function Headpage() {
   let mouseX = useMotionValue(Infinity);
@@ -147,8 +157,8 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
       onClick={() => setTheme(otherTheme)}
     >
-      <PiCloudSunLight className="w-6/12 transition  dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
-      <PiMoonLight className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
+      <WiDayCloudy className="w-6/12 transition  dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
+      <MdNightsStay className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
     </motion.div>
   );
 }

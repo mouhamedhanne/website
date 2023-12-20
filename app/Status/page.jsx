@@ -5,16 +5,16 @@ import React, { useState } from "react";
 const Status = [
   {
     Available: {
-      name: "Available  for work",
+      name: "Disponible pour travailler",
       color: "lime",
     },
 
     NotAvailable: {
-      name: "Am close for now",
+      name: "Indisponible pour le moment",
       color: "red",
     },
     Relaxing: {
-      name: "Completed",
+      name: "Terminé",
       color: "lime",
     },
   },
@@ -35,7 +35,7 @@ function Statuspage({ isAvailbale, Relaxing, className }) {
       : Status[0].Relaxing
       ? "bg-lime-400 "
       : "bg-red-600 ";
-  //
+
   return (
     <div>
       <span
