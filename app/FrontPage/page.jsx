@@ -4,30 +4,33 @@ import Status from "@/app/Status/page";
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { PiLockThin } from "react-icons/pi";
+//import { PiLockThin } from "react-icons/pi";
+import Social from "@/app/ui/reseau/Social";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
 
 const projects = [
   {
-    imgLink: "/img/img1.jpg",
+    imgLink: "/img/netflix-collection.png",
     title: "UI/ UX Case Study: Group Food Ordering",
     subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
   },
   {
-    imgLink: "/img/img2.jpg",
+    imgLink: "/img/intelli-surveillance.png",
     title:
       "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
     subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
   },
   {
-    imgLink: "/img/img3.jpg",
+    imgLink: "/img/burger-house.png",
     title: "Creating Dive platform's Trivia Game",
     subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
   },
 ];
 
+{
+  /*
 let link = [
   {
     date: "Dec 2022 - Apr 2023",
@@ -64,9 +67,11 @@ let link = [
       "I focused on visual and interaction design for the product, crafting compelling narratives. My responsibilities included creating interactive features that enriched user experiences on both the app and website.",
   },
 ];
+ */
+}
 
 function Frpage() {
-  const [show, setShow] = useState(link[0]);
+  // const [show, setShow] = useState(link[0]);
 
   return (
     <div className="mt-32">
@@ -75,14 +80,14 @@ function Frpage() {
           width={300}
           height={300}
           className="w-16 h-16 rounded-full object-cover"
-          src="/img/img3.jpg"
+          src="/img/mouhamedhanne.jpeg"
           alt="Profile"
         />
         <div>
           <h2 className="font-extrabold font-InterBlack dark:text-white text-3xl">
             GEEK GENIUS
           </h2>
-          <Link href={"https://twitter.com/harshii04"}>
+          <Link href={"https://twitter.com/MouhamedHanne13"}>
             <span className="text-neutral-500 ">@mouhamedhanne</span>
           </Link>
           <Status isAvailbale />
@@ -91,22 +96,25 @@ function Frpage() {
 
       <div className="mt-6 max-w-3xl">
         <h3 className="text-neutral-500 text-xs font-InterBold  uppercase ">
-          About Me
+          À propos de moi
         </h3>
         <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-          I’m crafting exceptional products that blend Design and Engineering.
-          Making Impactful experiences with beauty and function. Currently ,
-          looking for new opportunities to collaborate with people.
+          Je suis Mouhamed El Malick Hanne, un développeur web passionné. Je
+          façonne des produits exceptionnels qui fusionnent design et
+          ingénierie, créant des expériences impactantes alliant
+          <br /> beauté et fonctionnalité.
         </p>
         <p className="mt-6 dark:text-neutral-300 max-sm:text-sm font-InterMedium">
-          My objective is straightforward, to create exceptional things
-          alongside exceptional individuals. By collaborating harmoniously, we
-          can accomplish this goal.
+          Actuellement, je suis à la recherche de nouvelles opportunités pour
+          collaborer avec des esprits créatifs. Mon objectif est clair : créer
+          des projets exceptionnels aux côtés d'individus tout aussi
+          exceptionnels. En travaillant harmonieusement ensemble, nous pouvons
+          atteindre cet objectif.
         </p>
 
-        <button className="mt-10 border border-neutral-700/30 rounded-md p-2 w-full lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
-          View resume
-        </button>
+        <div className="mt-10">
+          <Social />
+        </div>
       </div>
 
       {/* Marquee text */}
@@ -202,6 +210,7 @@ function Frpage() {
 
       {/* Experience */}
 
+      {/*
       <div className="">
         <div className=" ">
           {link.map((each) => (
@@ -222,9 +231,9 @@ function Frpage() {
                     alt=""
                   />
                   <div>
-                    <h1 className="font-InterBold  text-lg ">{each.title}</h1>
-                    {/* you can add your desired links hrefs in the lnk array n wrap here with href */}
-                    <Link className="font-semibold hover:underline" href={"/"}>
+                    <h1 className="font-InterBold  text-lg ">{each.title}</h1> */}
+      {/* you can add your desired links hrefs in the lnk array n wrap here with href */}
+      {/* <Link className="font-semibold hover:underline" href={"/"}>
                       {each.sub}
                     </Link>
                   </div>
@@ -245,6 +254,7 @@ function Frpage() {
           ))}
         </div>
       </div>
+  */}
 
       {/* Marque texts */}
 
