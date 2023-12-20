@@ -33,7 +33,7 @@ export const generalLinks = [
     Icon: <FaUser />,
   },
   {
-    href: "/projects",
+    href: "/project",
     label: "Projets",
     target: "_blank",
     Icon: <FaCode />,
