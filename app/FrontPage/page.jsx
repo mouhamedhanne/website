@@ -8,24 +8,49 @@ import Link from "next/link";
 import Social from "@/app/ui/reseau/Social";
 import Image from "next/image";
 
+import CSS from "@/public/techno/css-3 (copie).svg";
+import ReactLogo from "@/public/techno/react-2.svg";
+import Tailwind from "@/public/techno/tailwindcss (copie).svg";
+import Javascript from "@/public/techno/logo-javascript.svg";
+import Firebase from "@/public/techno/firebase-1.svg";
+
 import { motion } from "framer-motion";
+import Stack from "../ui/stack/page";
 
 const projects = [
   {
     imgLink: "/img/netflix-collection.png",
     title: "UI/ UX Case Study: Group Food Ordering",
     subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind, Firebase],
+      },
+    ],
   },
   {
     imgLink: "/img/intelli-surveillance.png",
     title:
       "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
     subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [CSS, Javascript, ReactLogo],
+      },
+    ],
   },
   {
     imgLink: "/img/burger-house.png",
     title: "Creating Dive platform's Trivia Game",
     subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind, Firebase],
+      },
+    ],
   },
 ];
 
@@ -157,7 +182,7 @@ function Frpage() {
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
                   <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
-                    <span>2022</span>
+                    <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">
                     <Status
@@ -174,6 +199,12 @@ function Frpage() {
                   <p className="text-base mt-3 font-InterMedium dark:text-neutral-400 max-w-lg">
                     {each.subT}
                   </p>
+
+                  {/*
+                  <div>
+                    <Image />
+                  </div>
+                  */}
 
                   <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
                     Read Now
@@ -197,15 +228,20 @@ function Frpage() {
             animate="animate"
           >
             <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
-              Experience Experience Experience Experience Experience Experience
+              Compétences Compétences Compétences Compétences Compétences
+              Compétences Compétences Compétences Compétences Compétences
+              Compétences Compétences Compétences Compétences Compétences
+              Compétences Compétences Compétences Compétences Compétences
+              Compétences Compétences Compétences Compétences Compétences
+              Compétences Compétences Compétences Compétences Compétences
             </div>
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
         </div>
+      </div>
+
+      <div>
+        <Stack />
       </div>
 
       {/* Experience */}
