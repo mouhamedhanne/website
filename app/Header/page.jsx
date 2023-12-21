@@ -131,7 +131,7 @@ function AppIcon({ mouseX, imgs, href }) {
 }
 
 export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
-  let { resolvedTheme, setTheme } = useTheme("dark");
+  let { resolvedTheme, setTheme } = useTheme();
   let otherTheme = resolvedTheme === "dark" ? "light" : "dark";
   let [mounted, setMounted] = useState(false);
   let ref = useRef();
@@ -148,6 +148,8 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  //
 
   return (
     <motion.div
