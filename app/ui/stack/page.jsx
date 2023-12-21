@@ -41,34 +41,66 @@ const StackIcon = ({ icon, technologie, className }) => {
 export default function Stack() {
   return (
     <div className="flex flex-wrap items-center justify-center gap-8">
-      <StackIcon icon={HTML} technologie="html" className="w-[90px]" />
+      <StackIcon
+        icon={HTML}
+        technologie="html"
+        className="sm:w-[90px] w-[50px]"
+      />
       <StackIcon
         icon={CSS}
         technologie="CSS"
-        className="md:w-[90px] sm:w-[60px]"
+        className="sm:w-[90px] w-[50px]"
       />
-      <StackIcon icon={Tailwind} technologie="Tailwind" className="w-[90px]" />
+      <StackIcon
+        icon={Tailwind}
+        technologie="Tailwind"
+        className="sm:w-[90px] w-[50px]"
+      />
       <StackIcon
         icon={Javascript}
         technologie="Javascript"
-        className="w-[90px]"
+        className="sm:w-[90px] w-[50px]"
       />
       <StackIcon
         icon={Typescript}
         technologie="Typescript"
-        className="w-[90px]"
+        className="sm:w-[90px] w-[50px]"
       />
       <StackIcon
         icon={ReactLogo}
         technologie="ReactLogo"
-        className="w-[90px]"
+        className="sm:w-[90px] w-[50px]"
       />
-      <StackIcon icon={Next} technologie="Next" className="w-[90px]" />
-      <StackIcon icon={Python} technologie="Python" className="w-[90px]" />
-      <StackIcon icon={Django} technologie="Django" className="w-[90px]" />
-      <StackIcon icon={Firebase} technologie="Firebase" className="w-[90px]" />
-      <StackIcon icon={GIT} technologie="GIT" className="w-[100px]" />
-      <StackIcon icon={NPM} technologie="NPM" className="w-[100px]" />
+      <StackIcon
+        icon={Next}
+        technologie="Next"
+        className="sm:w-[90px] w-[50px]"
+      />
+      <StackIcon
+        icon={Python}
+        technologie="Python"
+        className="sm:w-[90px] w-[50px]"
+      />
+      <StackIcon
+        icon={Django}
+        technologie="Django"
+        className="sm:w-[90px] w-[50px]"
+      />
+      <StackIcon
+        icon={Firebase}
+        technologie="Firebase"
+        className="sm:w-[90px] w-[50px]"
+      />
+      <StackIcon
+        icon={GIT}
+        technologie="GIT"
+        className="sm:w-[100px] w-[60px]"
+      />
+      <StackIcon
+        icon={NPM}
+        technologie="NPM"
+        className="sm:w-[100px] w-[60px]"
+      />
     </div>
   );
 }
