@@ -42,7 +42,11 @@ export default function Stack() {
   return (
     <div className="flex flex-wrap items-center justify-center gap-8">
       <StackIcon icon={HTML} technologie="html" className="w-[90px]" />
-      <StackIcon icon={CSS} technologie="CSS" className="w-[90px]" />
+      <StackIcon
+        icon={CSS}
+        technologie="CSS"
+        className="md:w-[90px] sm:w-[60px]"
+      />
       <StackIcon icon={Tailwind} technologie="Tailwind" className="w-[90px]" />
       <StackIcon
         icon={Javascript}
