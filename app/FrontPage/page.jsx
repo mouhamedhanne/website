@@ -200,15 +200,22 @@ function Frpage() {
                     {each.subT}
                   </p>
 
-                  {/*
-                  <div>
-                    <Image />
+                  <div className="flex items-center gap-2 mt-8">
+                    {each.useTechno[0].icon.map((techIcon, index) => (
+                      <Image
+                        key={index}
+                        src={techIcon}
+                        alt={`Technologie ${index + 1}`}
+                        className="w-[30px]"
+                      />
+                    ))}
                   </div>
-                  */}
 
+                  {/*
                   <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
                     Read Now
                   </button>
+                   */}
                 </div>
               </div>
             </div>
@@ -311,19 +318,6 @@ function Frpage() {
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
         </div>
-      </div>
-
-      <div>
-        <p className="text-lg ">
-          I take pleasure in meeting new people and am enthusiastic about
-          assisting with any queries you may have.
-        </p>
-
-        <p className="mt-4">
-          Additionally, I love discussing forgotten or unfinished projects and
-          exploring the fascinating topic of how artificial intelligence could
-          potentially dominate the world.
-        </p>
       </div>
     </div>
   );

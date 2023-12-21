@@ -7,7 +7,7 @@ function Fpage() {
         Stay Hungary, Stay Foolish
       </p>
       <p className="dark:text-neutral-500 text-base uppercase font-InterBlack">
-        Designed and built by JoScript
+        Designed and built by GEEK GENIUS
       </p>
     </div>
   );

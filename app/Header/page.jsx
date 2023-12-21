@@ -16,22 +16,11 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
+
 //import { SiStackblitz } from "react-icons/si";
 import Link from "next/link";
 
 export const generalLinks = [
-  {
-    href: "/",
-    label: "Home",
-    Icon: <FaHome />,
-  },
-  {
-    href: "/about",
-    label: "About",
-    Icon: <FaUser />,
-  },
   {
     href: "/project",
     label: "Projets",
