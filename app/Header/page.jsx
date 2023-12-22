@@ -122,7 +122,7 @@ function AppIcon({ mouseX, imgs, href }) {
 export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let { resolvedTheme, setTheme } = useTheme();
   let otherTheme = resolvedTheme === "light" ? "dark" : "light";
-  let [mounted, setMounted] = useState(true);
+  let [mounted, setMounted] = useState(false);
   let ref = useRef();
 
   let distance = useTransform(mouseX, (val) => {
@@ -135,7 +135,7 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
 
   useEffect(() => {
-    setMounted(false);
+    setMounted(true);
   }, []);
 
   return (

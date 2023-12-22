@@ -9,27 +9,46 @@ import Link from "next/link";
 import { useAnimate, stagger, motion } from "framer-motion";
 import Image from "next/image";
 
+import CSS from "@/public/techno/css-3 (copie).svg";
+import ReactLogo from "@/public/techno/react-2.svg";
+import Tailwind from "@/public/techno/tailwindcss (copie).svg";
+import Javascript from "@/public/techno/logo-javascript.svg";
+import Firebase from "@/public/techno/firebase-1.svg";
+
 const projects = [
   {
-    imgLink: "/img/img6.jpg",
-    title: "Redesigning the landing page for better discoveribility",
-    subT: "Redesigned 'The Product House' landing page for my take-home assignment! My goal was to create an engaging and informative showcase of their brand.",
-  },
-  {
-    imgLink: "/img/img1.jpg",
+    imgLink: "/img/netflix-collection.png",
     title: "UI/ UX Case Study: Group Food Ordering",
     subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind, Firebase],
+      },
+    ],
   },
   {
-    imgLink: "/img/img2.jpg",
+    imgLink: "/img/intelli-surveillance.png",
     title:
       "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
     subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [CSS, Javascript, ReactLogo],
+      },
+    ],
   },
   {
-    imgLink: "/img/img3.jpg",
+    imgLink: "/img/burger-house.png",
     title: "Creating Dive platform's Trivia Game",
     subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+    year: "2023",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind, Firebase],
+      },
+    ],
   },
 ];
 
@@ -81,7 +100,7 @@ function Projpage() {
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
                   <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
-                    <span>2022</span>
+                    <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">
                     <Status
@@ -99,9 +118,16 @@ function Projpage() {
                     {each.subT}
                   </p>
 
-                  <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
-                    Read Now
-                  </button>
+                  <div className="flex items-center gap-2 mt-8">
+                    {each.useTechno[0].icon.map((techIcon, index) => (
+                      <Image
+                        key={index}
+                        src={techIcon}
+                        alt={`Technologie ${index + 1}`}
+                        className="w-[30px]"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
