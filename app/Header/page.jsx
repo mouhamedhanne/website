@@ -121,7 +121,7 @@ function AppIcon({ mouseX, imgs, href }) {
 
 export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
   let { resolvedTheme, setTheme } = useTheme();
-  let otherTheme = resolvedTheme === "dark" ? "light" : "dark";
+  let otherTheme = resolvedTheme === "light" ? "dark" : "light";
   let [mounted, setMounted] = useState(false);
   let ref = useRef();
 
@@ -146,10 +146,8 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
       onClick={() => setTheme(otherTheme)}
     >
-      <WiDayCloudy className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
       <MdNightsStay className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
+      <WiDayCloudy className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
     </motion.div>
   );
 }
-
-// fill-white
