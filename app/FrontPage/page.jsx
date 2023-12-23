@@ -20,8 +20,8 @@ import Stack from "../ui/stack/page";
 const projects = [
   {
     imgLink: "/img/netflix-collection.png",
-    title: "UI/ UX Case Study: Group Food Ordering",
-    subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+    title: "NetflixCollection : Mon Univers Cinéphile Personnalisé",
+    subT: "Explorez NetflixCollection, une application que j'ai façonnée de bout en bout. Plongez dans une expérience cinématographique sur mesure en découvrant, suggérant et favorisant vos films préférés. ",
     year: "2023",
     useTechno: [
       {
@@ -31,9 +31,8 @@ const projects = [
   },
   {
     imgLink: "/img/intelli-surveillance.png",
-    title:
-      "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
-    subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+    title: "IntelliSurveillance : Pionnier en Sécurité Scolaire au Sénégal",
+    subT: "Leaders en installations de vidéosurveillance sur mesure, nous protégeons les établissements scolaires avec des solutions innovantes, assurant un environnement éducatif sûr et propice à la croissance.",
     year: "2023",
     useTechno: [
       {
@@ -43,8 +42,8 @@ const projects = [
   },
   {
     imgLink: "/img/burger-house.png",
-    title: "Creating Dive platform's Trivia Game",
-    subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+    title: "Burger House : Un Template Gourmet à Personnaliser",
+    subT: "Explorez le potentiel du template Burger House, un site web unique dédié à la gastronomie.",
     year: "2023",
     useTechno: [
       {
@@ -124,17 +123,18 @@ function Frpage() {
           À propos de moi
         </h3>
         <p className="dark:text-neutral-300  font-InterMedium  mt-3">
-          Je suis Mouhamed El Malick Hanne, un développeur web passionné. Je
-          façonne des produits exceptionnels qui fusionnent design et
-          ingénierie, créant des expériences impactantes alliant
-          <br /> beauté et fonctionnalité.
+          Je suis Mouhamed El Malick Hanne, un passionné de la nouvelle
+          technologie et un développeur web créatif. Je navigue avec
+          enthousiasme dans le monde en constante évolution du développement,
+          créant des expériences numériques uniques qui repoussent les limites
+          de l'innovation.
         </p>
         <p className="mt-6 dark:text-neutral-300 max-sm:text-sm font-InterMedium">
-          Actuellement, je suis à la recherche de nouvelles opportunités pour
-          collaborer avec des esprits créatifs. Mon objectif est clair : créer
-          des projets exceptionnels aux côtés d'individus tout aussi
-          exceptionnels. En travaillant harmonieusement ensemble, nous pouvons
-          atteindre cet objectif.
+          Mon amour pour le code et ma soif de créativité me guident dans la
+          conception de solutions web exceptionnelles. À travers ma quête
+          incessante d'apprentissage, je me lance constamment dans de nouveaux
+          défis technologiques pour offrir des produits qui marquent les
+          esprits.
         </p>
 
         <div className="mt-10">
@@ -318,6 +318,10 @@ function Frpage() {
           </motion.div>
           <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
         </div>
+        <p>
+          Rejoignez-moi dans cette aventure digitale où chaque ligne de code est
+          une opportunité de créer quelque chose d'extraordinaire.
+        </p>
       </div>
     </div>
   );

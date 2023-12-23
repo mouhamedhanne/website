@@ -18,8 +18,8 @@ import Firebase from "@/public/techno/firebase-1.svg";
 const projects = [
   {
     imgLink: "/img/netflix-collection.png",
-    title: "UI/ UX Case Study: Group Food Ordering",
-    subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+    title: "NetflixCollection : Mon Univers Cinéphile Personnalisé",
+    subT: "Explorez NetflixCollection, une application que j'ai façonnée de bout en bout. Plongez dans une expérience cinématographique sur mesure en découvrant, suggérant et favorisant vos films préférés. ",
     year: "2023",
     useTechno: [
       {
@@ -29,9 +29,8 @@ const projects = [
   },
   {
     imgLink: "/img/intelli-surveillance.png",
-    title:
-      "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
-    subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+    title: "IntelliSurveillance : Pionnier en Sécurité Scolaire au Sénégal",
+    subT: "Leaders en installations de vidéosurveillance sur mesure, nous protégeons les établissements scolaires avec des solutions innovantes, assurant un environnement éducatif sûr et propice à la croissance.",
     year: "2023",
     useTechno: [
       {
@@ -41,8 +40,8 @@ const projects = [
   },
   {
     imgLink: "/img/burger-house.png",
-    title: "Creating Dive platform's Trivia Game",
-    subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+    title: "Burger House : Un Template Gourmet à Personnaliser",
+    subT: "Explorez le potentiel du template Burger House, un site web unique dédié à la gastronomie.",
     year: "2023",
     useTechno: [
       {

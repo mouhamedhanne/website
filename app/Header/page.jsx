@@ -9,8 +9,12 @@ import {
 import { useRef, useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import { MdNightsStay } from "react-icons/md";
-import { WiDayCloudy } from "react-icons/wi";
+//import { MdNightsStay } from "react-icons/md";
+//import { WiDayCloudy } from "react-icons/wi";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 import { FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -146,8 +150,20 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
       onClick={() => setTheme(otherTheme)}
     >
-      <WiDayCloudy className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
-      <MdNightsStay className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
+      <FontAwesomeIcon
+        icon={faSun}
+        className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900"
+      />
+      <FontAwesomeIcon
+        icon={faMoon}
+        className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900"
+      />
     </motion.div>
   );
+}
+
+{
+  /*  <WiDayCloudy className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900" />
+      <MdNightsStay className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900" />
+  */
 }
