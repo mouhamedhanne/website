@@ -34,7 +34,7 @@ export default function Social() {
         plateform="Instagram"
         icon={Instagram}
         text="Instagram"
-        link="https://instagram.com/geek__genius"
+        link="https://instagram.com/geek___genius"
         background="bg-[#dc4764]"
       />
       <SocialIcon
