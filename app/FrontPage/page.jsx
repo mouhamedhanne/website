@@ -16,6 +16,7 @@ import Firebase from "@/public/techno/firebase-1.svg";
 
 import { motion } from "framer-motion";
 import Stack from "../ui/stack/page";
+import Contact from "@/app/ui/contact/page";
 
 const projects = [
   {
@@ -243,7 +244,12 @@ function Frpage() {
               Compétences Compétences Compétences Compétences Compétences
             </div>
           </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+          <div
+            className=" bg-gradient-to-l absolute right-0 z-10
+           dark:from-[#161616] dark:via-[#161616] from-[#fff]
+            via-[#fff] to-transparent w-16 rounded-md h-9 transition-all
+             ease-in duration-200"
+          />
         </div>
       </div>
 
@@ -302,22 +308,44 @@ function Frpage() {
       {/* Marque texts */}
 
       <div>
-        <div className="marquee  relative my-24 h-10 max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
+        <div
+          className="marquee  relative my-24 h-10 max-w-6xl
+         overflow-x-hidden"
+        >
+          <div
+            className=" bg-gradient-to-r absolute z-10 from-[#fff]
+           via-[#fff] dark:from-[#161616] dark:via-[#161616] 
+           to-transparent w-20 rounded-md h-9 transition-all ease-in
+            duration-200"
+          />
           <motion.div
             className="track"
             variants={marqueeVariants}
             animate="animate"
           >
-            <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
+            <div
+              className=" flex gap-x-5 mt-2 uppercase font-bold
+             justify-evenly text-sm  text-neutral-700"
+            >
               ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
               ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
               ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
               ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
             </div>
           </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+
+          <div
+            className=" bg-gradient-to-l absolute right-0 z-10
+           dark:from-[#161616] dark:via-[#161616] from-[#fff]
+            via-[#fff] to-transparent w-16 rounded-md h-9 transition-all
+             ease-in duration-200"
+          />
         </div>
+
+        <div>
+          <Contact />
+        </div>
+
         <p>
           Rejoignez-moi dans cette aventure digitale où chaque ligne de code est
           une opportunité de créer quelque chose d'extraordinaire.

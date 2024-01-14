@@ -12,7 +12,9 @@ const SocialIcon = ({ plateform, icon, text, link, background }) => {
     <a
       href={link}
       target="_blank"
-      className={`inline-flex items-center justify-center p-2 ${background} rounded-md hover:opacity-75 transition-opacity duration-300`}
+      className={`inline-flex items-center justify-center p-2
+       ${background} rounded-md hover:opacity-75 transition-opacity
+        duration-300`}
     >
       <Image src={icon} alt={plateform} width={20} height={30} className="" />
       <span className="pl-2">{text}</span>
