@@ -14,11 +14,29 @@ import Tailwind from "@/public/techno/tailwindcss (copie).svg";
 import Javascript from "@/public/techno/logo-javascript.svg";
 import Firebase from "@/public/techno/firebase-1.svg";
 
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
+
 import { motion } from "framer-motion";
 import Stack from "../ui/stack/page";
 import Contact from "@/app/ui/contact/page";
 
 const projects = [
+  {
+    imgLink: "/img/challenge-integration.png",
+    title: "Challenge-Integration : ",
+    subT: "Le projet 'Challenge d'Intégration' représente un passionnant défi que j'ai relevé en intégrant une maquette inspirante trouvée en ligne. Guidé par ma créativité et mes compétences en intégration, j'ai reproduit avec précision le design tout en m'assurant de maintenir une expérience utilisateur optimale.",
+    year: "2024",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind],
+      },
+    ],
+    linkGithub: "https://github.com/mouhamedhanne/Challenge_Integration",
+    linkProject: "https://mouhamedhanne-challenge-integration.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
+  },
   {
     imgLink: "/img/netflix-collection.png",
     title: "NetflixCollection : Mon Univers Cinéphile Personnalisé",
@@ -29,6 +47,10 @@ const projects = [
         icon: [Javascript, ReactLogo, Tailwind, Firebase],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/Netflix_collection",
+    linkProject: "https://netflix-ollection.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
   {
     imgLink: "/img/intelli-surveillance.png",
@@ -40,6 +62,10 @@ const projects = [
         icon: [CSS, Javascript, ReactLogo],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/Intelli-Surveillance",
+    linkProject: "https://intelli-surveillance.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
   {
     imgLink: "/img/burger-house.png",
@@ -51,6 +77,10 @@ const projects = [
         icon: [Javascript, ReactLogo, Tailwind, Firebase],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/burger_house",
+    linkProject: "https://house-burger.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
 ];
 
@@ -211,12 +241,26 @@ function Frpage() {
                       />
                     ))}
                   </div>
+                  <div
+                    className="text-[22px] flex items-center gap-3 mt-3 font-InterMedium
+                   dark:text-neutral-400 max-w-lg"
+                  >
+                    {each.linkGithub && (
+                      <div>
+                        <Link href={each.linkGithub} target="_blank">
+                          {each.iconeGithub}
+                        </Link>
+                      </div>
+                    )}
 
-                  {/*
-                  <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm dark:text-neutral-400 font-semibold shadow-md">
-                    Read Now
-                  </button>
-                   */}
+                    {each.linkProject && (
+                      <div>
+                        <Link href={each.linkProject} target="_blank">
+                          {each.iconeProject}
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
