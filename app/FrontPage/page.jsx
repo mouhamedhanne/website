@@ -13,6 +13,7 @@ import ReactLogo from "@/public/techno/react-2.svg";
 import Tailwind from "@/public/techno/tailwindcss (copie).svg";
 import Javascript from "@/public/techno/logo-javascript.svg";
 import Firebase from "@/public/techno/firebase-1.svg";
+import NextJs from "@/public/techno/next-js (copie).svg";
 
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
@@ -23,8 +24,23 @@ import Contact from "@/app/ui/contact/page";
 
 const projects = [
   {
+    imgLink: "/img/online-translator.png",
+    title: "La Puissance de la Traduction!",
+    subT: "Architecte de l'accessibilité linguistique, j'ai conçu une application de traduction révolutionnaire qui élimine les barrières linguistiques, permettant aux utilisateurs d'explorer un monde de communication multilingue sans limites. Du texte à la traduction de fichiers PDF.",
+    year: "2024",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, NextJs, Tailwind],
+      },
+    ],
+    linkGithub: "https://github.com/mouhamedhanne/Translator_Online",
+    linkProject: "https://online-translator.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
+  },
+  {
     imgLink: "/img/challenge-integration.png",
-    title: "Challenge-Integration : ",
+    title: "Challenge-Integration",
     subT: "Le projet 'Challenge d'Intégration' représente un passionnant défi que j'ai relevé en intégrant une maquette inspirante trouvée en ligne. Guidé par ma créativité et mes compétences en intégration, j'ai reproduit avec précision le design tout en m'assurant de maintenir une expérience utilisateur optimale.",
     year: "2024",
     useTechno: [
@@ -199,10 +215,10 @@ function Frpage() {
       <div className="">
         {projects.map((each, i) => (
           <div key={i}>
-            <div className="flex flex-col lg:flex-row  gap-x-8 my-6">
+            <div className="flex flex-col lg:flex-row gap-x-8 my-6">
               <div className="h-60 w-full md:w-64 ">
                 <Image
-                  width={700}
+                  width={950}
                   height={700}
                   alt="project"
                   className="w-full h-full object-cover rounded-md"
@@ -212,7 +228,7 @@ function Frpage() {
 
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
-                  <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
+                  <div className=" px-2 py-1 text-xs font-semibold border rounded-full dark:border-neutral-700">
                     <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">

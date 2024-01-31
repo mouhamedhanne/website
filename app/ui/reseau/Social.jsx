@@ -52,7 +52,7 @@ export default function Social() {
         icon={Github}
         text="Github"
         link="https://github.com/mouhamedhanne"
-        background="bg-gray-400"
+        background="bg-[#1C1B20]"
       />
       <SocialIcon
         plateform="News"

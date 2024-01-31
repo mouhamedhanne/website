@@ -1,7 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { TbArrowBackUp } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 import Status from "@/app/Status/page";
 import Link from "next/link";
@@ -17,6 +19,36 @@ import Firebase from "@/public/techno/firebase-1.svg";
 
 const projects = [
   {
+    imgLink: "/img/online-translator.png",
+    title: "La Puissance de la Traduction!",
+    subT: "Architecte de l'accessibilité linguistique, j'ai conçu une application de traduction révolutionnaire qui élimine les barrières linguistiques, permettant aux utilisateurs d'explorer un monde de communication multilingue sans limites. Du texte à la traduction de fichiers PDF.",
+    year: "2024",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, NextJs, Tailwind],
+      },
+    ],
+    linkGithub: "https://github.com/mouhamedhanne/Translator_Online",
+    linkProject: "https://online-translator.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
+  },
+  {
+    imgLink: "/img/challenge-integration.png",
+    title: "Challenge-Integration",
+    subT: "Le projet 'Challenge d'Intégration' représente un passionnant défi que j'ai relevé en intégrant une maquette inspirante trouvée en ligne. Guidé par ma créativité et mes compétences en intégration, j'ai reproduit avec précision le design tout en m'assurant de maintenir une expérience utilisateur optimale.",
+    year: "2024",
+    useTechno: [
+      {
+        icon: [Javascript, ReactLogo, Tailwind],
+      },
+    ],
+    linkGithub: "https://github.com/mouhamedhanne/Challenge_Integration",
+    linkProject: "https://mouhamedhanne-challenge-integration.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
+  },
+  {
     imgLink: "/img/netflix-collection.png",
     title: "NetflixCollection : Mon Univers Cinéphile Personnalisé",
     subT: "Explorez NetflixCollection, une application que j'ai façonnée de bout en bout. Plongez dans une expérience cinématographique sur mesure en découvrant, suggérant et favorisant vos films préférés. ",
@@ -26,6 +58,10 @@ const projects = [
         icon: [Javascript, ReactLogo, Tailwind, Firebase],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/Netflix_collection",
+    linkProject: "https://netflix-ollection.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
   {
     imgLink: "/img/intelli-surveillance.png",
@@ -37,6 +73,10 @@ const projects = [
         icon: [CSS, Javascript, ReactLogo],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/Intelli-Surveillance",
+    linkProject: "https://intelli-surveillance.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
   {
     imgLink: "/img/burger-house.png",
@@ -48,6 +88,10 @@ const projects = [
         icon: [Javascript, ReactLogo, Tailwind, Firebase],
       },
     ],
+    linkGithub: "https://github.com/mouhamedhanne/burger_house",
+    linkProject: "https://house-burger.vercel.app/",
+    iconeGithub: <FaGithub />,
+    iconeProject: <TbWorld />,
   },
 ];
 
@@ -126,6 +170,26 @@ function Projpage() {
                         className="w-[30px]"
                       />
                     ))}
+                  </div>
+                  <div
+                    className="text-[22px] flex items-center gap-3 mt-3 font-InterMedium
+                   dark:text-neutral-400 max-w-lg"
+                  >
+                    {each.linkGithub && (
+                      <div>
+                        <Link href={each.linkGithub} target="_blank">
+                          {each.iconeGithub}
+                        </Link>
+                      </div>
+                    )}
+
+                    {each.linkProject && (
+                      <div>
+                        <Link href={each.linkProject} target="_blank">
+                          {each.iconeProject}
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
