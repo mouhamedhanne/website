@@ -71,7 +71,10 @@ function Headpage() {
         onMouseLeave={() => mouseX.set(Infinity)}
         className="  fixed z-50 flex bottom-8 left-1/2 -translate-x-1/2 "
       >
-        <div className="flex items-end h-16 gap-4 px-4 pb-2.5 mx-auto outline-0 rounded-2xl box-gen ring-1 backdrop-blur-md dark:ring-[#1a1a1a] ">
+        <div
+          className="flex items-end h-16 gap-4 px-4 pb-2.5 mx-auto outline-0
+         rounded-2xl box-gen ring-1 backdrop-blur-md dark:ring-[#1a1a1a] "
+        >
           {generalLinks.map((link, i) => {
             return (
               <div key={i}>
@@ -87,7 +90,10 @@ function Headpage() {
               </div>
             );
           })}
-          <hr className=" h-10 w-[1px]  bg-neutral-300 dark:bg-neutral-700 mt-2.5 border-none" />
+          <hr
+            className=" h-10 w-[1px]  bg-neutral-300 dark:bg-neutral-700 mt-2.5 
+          border-none"
+          />
 
           <ThemeToggleNav mouseX={mouseX} />
         </div>
@@ -115,7 +121,9 @@ function AppIcon({ mouseX, imgs, href }) {
       <motion.div
         ref={ref}
         style={{ width }}
-        className="z-30 flex items-center justify-center rounded-full  border border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70 cursor-pointer aspect-square "
+        className="z-30 flex items-center justify-center rounded-full border
+         border-neutral-400/20 dark:border-neutral-700 dark:bg-neutral-900/70
+          cursor-pointer aspect-square "
       >
         <span className="text-3xl">{imgs}</span>
       </motion.div>
@@ -146,17 +154,19 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
     <motion.div
       ref={ref}
       style={{ width }}
-      className="z-30 flex items-center justify-center w-10 rounded-full cursor-pointer bg-neutral-200/70 dark:bg-neutral-900/70 aspect-square "
+      className="z-30 flex items-center justify-center w-10 rounded-full cursor-pointer
+       bg-neutral-200/70 dark:bg-neutral-900/70 aspect-square "
       aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
       onClick={() => setTheme(otherTheme)}
     >
       <FontAwesomeIcon
         icon={faSun}
-        className="w-6/12 transition dark:hidden dark:stroke-neutral-300 stroke-neutral-900"
+        className="w-6/12 transition dark:hidden dark:stroke-neutral-300                                                                                                                                                     stroke-neutral-900"
       />
       <FontAwesomeIcon
         icon={faMoon}
-        className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900"
+        className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300
+         stroke-neutral-900"
       />
     </motion.div>
   );
