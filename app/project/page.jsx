@@ -16,6 +16,7 @@ import ReactLogo from "@/public/techno/react-2.svg";
 import Tailwind from "@/public/techno/tailwindcss (copie).svg";
 import Javascript from "@/public/techno/logo-javascript.svg";
 import Firebase from "@/public/techno/firebase-1.svg";
+import NextJs from "@/public/techno/next-js (copie).svg";
 
 const projects = [
   {
