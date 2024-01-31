@@ -114,11 +114,17 @@ function Projpage() {
   return (
     <div ref={scope} className="relative max-w-5xl mx-auto px-8">
       <div className="relative mt-14">
-        <h2 className="text-xl text-center dark:text-neutral-400 font-InterBold uppercase ">
+        <h2
+          className="text-xl text-center dark:text-neutral-400
+         font-InterBold uppercase "
+        >
           Projects
         </h2>
         <Link href={"/"}>
-          <div className=" bg-neutral-700/10 rounded-md absolute -top-1  w-12 h-8 flex  items-center justify-center ">
+          <div
+            className=" bg-neutral-700/10 rounded-md absolute -top-1
+            w-12 h-8 flex  items-center justify-center "
+          >
             <TbArrowBackUp className="dark:text-white  text-black text-xl" />
           </div>
         </Link>
@@ -143,13 +149,17 @@ function Projpage() {
 
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
-                  <div className=" px-2 py-1 text-xs font-semibold   border rounded-full dark:border-neutral-700">
+                  <div
+                    className=" px-2 py-1 text-xs font-semibold border
+                   rounded-full dark:border-neutral-700"
+                  >
                     <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">
                     <Status
                       Relaxing
-                      className=" border rounded-full dark:border-neutral-700 px-2 py-1"
+                      className=" border rounded-full dark:border-neutral-700
+                       px-2 py-1"
                     />
                   </div>
                 </div>
@@ -158,7 +168,10 @@ function Projpage() {
                   <h1 className="font-InterBold text-lg max-w-lg mt-4">
                     {each.title}
                   </h1>
-                  <p className="text-base mt-3 font-InterMedium dark:text-neutral-400 max-w-lg">
+                  <p
+                    className="text-base mt-3 font-InterMedium dark:text-neutral-400
+                   max-w-lg"
+                  >
                     {each.subT}
                   </p>
 
@@ -195,7 +208,10 @@ function Projpage() {
                 </div>
               </div>
             </div>
-            <div className="border my-16 border-neutral-300 dark:border-neutral-800  h-[1px]" />
+            <div
+              className="border my-16 border-neutral-300 dark:border-neutral-800
+              h-[1px]"
+            />
           </div>
         ))}
       </div>

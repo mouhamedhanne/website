@@ -193,20 +193,31 @@ function Frpage() {
 
       <div>
         <div className="marquee  relative my-24 h-10 max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
+          <div
+            className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff]
+           dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md
+            h-9 transition-all ease-in duration-200"
+          />
           <motion.div
             className="track"
             variants={marqueeVariants}
             animate="animate"
           >
-            <div className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-sm text-neutral-700">
+            <div
+              className=" flex gap-x-5 mt-2 uppercase font-semibold justify-evenly
+             text-sm text-neutral-700"
+            >
               Project Project Project Project Project Project Project Project
               Project Project Project Project Project Project Project Project
               Project Project Project Project Project Project Project Project
               Project Project Project Project Project Project Project
             </div>
           </motion.div>
-          <div className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616] dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+          <div
+            className=" bg-gradient-to-l absolute right-0 z-10 dark:from-[#161616]
+           dark:via-[#161616] from-[#fff] via-[#fff] to-transparent w-16 rounded-md
+            h-9 transition-all ease-in duration-200"
+          />
         </div>
       </div>
 
@@ -228,7 +239,10 @@ function Frpage() {
 
               <div>
                 <div className="w-fit flex items-center gap-x-2 ">
-                  <div className=" px-2 py-1 text-xs font-semibold border rounded-full dark:border-neutral-700">
+                  <div
+                    className=" px-2 py-1 text-xs font-semibold border rounded-full
+                   dark:border-neutral-700"
+                  >
                     <span>{each.year}</span>
                   </div>
                   <div className=" flex items-center gap-x-3">
@@ -243,7 +257,10 @@ function Frpage() {
                   <h1 className="font-InterBold text-lg max-w-lg mt-4">
                     {each.title}
                   </h1>
-                  <p className="text-base mt-3 font-InterMedium dark:text-neutral-400 max-w-lg">
+                  <p
+                    className="text-base mt-3 font-InterMedium dark:text-neutral-400
+                   max-w-lg"
+                  >
                     {each.subT}
                   </p>
 
@@ -280,7 +297,10 @@ function Frpage() {
                 </div>
               </div>
             </div>
-            <div className="border my-16 border-neutral-300 dark:border-neutral-800  h-[1px]" />
+            <div
+              className="border my-16 border-neutral-300 dark:border-neutral-800
+              h-[1px]"
+            />
           </div>
         ))}
       </div>
@@ -289,13 +309,19 @@ function Frpage() {
 
       <div>
         <div className="marquee my-24 h-10 relative  max-w-6xl overflow-x-hidden">
-          <div className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff] dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
+          <div
+            className=" bg-gradient-to-r absolute z-10 from-[#fff] via-[#fff]
+           dark:from-[#161616] dark:via-[#161616] to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200"
+          />
           <motion.div
             className="track"
             variants={marqueeVariants}
             animate="animate"
           >
-            <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
+            <div
+              className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly
+             text-sm  text-neutral-700"
+            >
               Compétences Compétences Compétences Compétences Compétences
               Compétences Compétences Compétences Compétences Compétences
               Compétences Compétences Compétences Compétences Compétences

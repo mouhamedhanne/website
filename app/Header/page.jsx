@@ -90,7 +90,10 @@ function Headpage() {
               </div>
             );
           })}
-          <hr className=" h-10 w-[1px]  bg-neutral-300 dark:bg-neutral-700 mt-2.5 border-none" />
+          <hr
+            className=" h-10 w-[1px]  bg-neutral-300 dark:bg-neutral-700 mt-2.5 
+          border-none"
+          />
 
           <ThemeToggleNav mouseX={mouseX} />
         </div>
@@ -162,7 +165,8 @@ export function ThemeToggleNav({ className, rel, mouseX, ...props }) {
       />
       <FontAwesomeIcon
         icon={faMoon}
-        className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300 stroke-neutral-900"
+        className="hidden w-6/12 transition  dark:block dark:stroke-neutral-300
+         stroke-neutral-900"
       />
     </motion.div>
   );
