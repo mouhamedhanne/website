@@ -1,4 +1,27 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_0gcy8vr", "template_f3h720g", form.current, {
+        publicKey: "_nazTrPh5TP93RT2n",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div
       className="mb-20 
@@ -13,13 +36,17 @@ export default function Contact() {
         </h2>
       </div>
       <div className="flex justify-center items-center mr-[23rem]">
-        <form action="" className="contact-form-container ">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="contact-form-container "
+        >
           <div className="container">
             <label htmlFor="first-name" className="contact-label">
               <span>Prénom</span>
               <input
                 type="text"
-                name="first-name"
+                name="user_name"
                 id="first-name"
                 required
                 placeholder="John"
@@ -30,7 +57,7 @@ export default function Contact() {
               <span>Nom</span>
               <input
                 type="text"
-                name="last-name"
+                name=""
                 id="last-name"
                 required
                 placeholder="Doe"
@@ -41,7 +68,7 @@ export default function Contact() {
               <span>Email</span>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 id="email"
                 required
                 placeholder="johndoe@gmail.com"
@@ -52,7 +79,7 @@ export default function Contact() {
               <span>Numéro Téléphone</span>
               <input
                 type="number"
-                name="phone"
+                name="user_phone"
                 id="phone"
                 required
                 placeholder="221 12 34 56 78"
@@ -63,6 +90,7 @@ export default function Contact() {
           <label htmlFor="message" className="contact-label">
             <span>Message</span>
             <textarea
+              name="message"
               className="contact-input "
               id="message"
               rows="4"
@@ -72,6 +100,7 @@ export default function Contact() {
 
           <div>
             <button
+              type="submit"
               className="px-9 py-4 bg-[#5e3bee] rounded-2xl
            hover:opacity-75 transition-opacity duration-300 "
             >

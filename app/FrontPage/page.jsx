@@ -156,7 +156,7 @@ function Frpage() {
         />
         <div>
           <h2 className="font-extrabold font-InterBlack dark:text-white text-3xl">
-            GEEK GENIUS
+            GEEK_SN &gt;_ 
           </h2>
           <Link href={"https://twitter.com/mouhamedhanne13"}>
             <span className="text-neutral-500 ">@mouhamedhanne</span>
