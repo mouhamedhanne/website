@@ -82,7 +82,7 @@ export default function Contact() {
                 name="user_phone"
                 id="phone"
                 required
-                placeholder="221 12 34 56 78"
+                placeholder="221 177 123 45 67"
                 className="contact-input "
               />
             </label>
