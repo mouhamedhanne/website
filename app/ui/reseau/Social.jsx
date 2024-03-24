@@ -29,14 +29,14 @@ export default function Social() {
         plateform="LinkedIn"
         icon={LinkedIn}
         text="LinkedIn"
-        link="https://github.com/mouhamedhanne"
+        link="https://www.linkedin.com/in/mouhamed-el-malick-hanne-99199a2a6/"
         background="bg-[#0e79b1]"
       />
       <SocialIcon
         plateform="Instagram"
         icon={Instagram}
         text="Instagram"
-        link="https://instagram.com/geek___genius"
+        link="https://instagram.com/geek__sn"
         background="bg-[#dc4764]"
       />
       <SocialIcon

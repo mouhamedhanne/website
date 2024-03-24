@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 export default function Contact() {
   const form = useRef();
@@ -14,9 +15,10 @@ export default function Contact() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Message envoyé avec succès");
         },
         (error) => {
+          toast.error("Message non envoyé");
           console.log("FAILED...", error.text);
         }
       );
